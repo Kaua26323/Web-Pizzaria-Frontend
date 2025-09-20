@@ -1,0 +1,26 @@
+.button{
+  height: 40px;
+  border-radius: 8px;
+  border: 0;
+  font-weight: bold;
+  font-size: 16px;
+  transition: all 0.6s ease;
+
+  &:hover{
+    transform: scale(1.02);
+  }
+}
+
+.spin{
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
